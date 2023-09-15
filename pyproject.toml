@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "spx-constituent-analysis"
+version = "0.1.0"
+description = ""
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "spx_constituent_analysis"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.1.0"
+Nasdaq-Data-Link = "^1.0.4"
+structlog = "^23.1.0"
+numpy = "^1.25.2"
+matplotlib = "^3.8.0"
+python-dotenv = "^1.0.0"
+pathlib = "^1.0.1"
+tqdm = "^4.66.1"
+invoke = "^2.2.0"
+ipython = "^8.15.0"
+pyarrow = "^13.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
